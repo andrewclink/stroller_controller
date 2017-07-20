@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		491773E31F2135480068005D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491773E21F2135480068005D /* AppDelegate.swift */; };
+		491773E51F2135480068005D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491773E41F2135480068005D /* ViewController.swift */; };
+		491773E81F2135480068005D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491773E61F2135480068005D /* Main.storyboard */; };
+		491773EA1F2135480068005D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491773E91F2135480068005D /* Assets.xcassets */; };
+		491773ED1F2135480068005D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491773EB1F2135480068005D /* LaunchScreen.storyboard */; };
+		491773F81F2135480068005D /* StrollerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491773F71F2135480068005D /* StrollerControllerTests.swift */; };
+		491774031F2135480068005D /* StrollerControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491774021F2135480068005D /* StrollerControllerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		491773F41F2135480068005D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 491773D71F2135470068005D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 491773DE1F2135470068005D;
+			remoteInfo = StrollerController;
+		};
+		491773FF1F2135480068005D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 491773D71F2135470068005D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 491773DE1F2135470068005D;
+			remoteInfo = StrollerController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		491773DF1F2135480068005D /* StrollerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StrollerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		491773E21F2135480068005D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		491773E41F2135480068005D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		491773E71F2135480068005D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		491773E91F2135480068005D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		491773EC1F2135480068005D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		491773EE1F2135480068005D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		491773F31F2135480068005D /* StrollerControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrollerControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		491773F71F2135480068005D /* StrollerControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrollerControllerTests.swift; sourceTree = "<group>"; };
+		491773F91F2135480068005D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		491773FE1F2135480068005D /* StrollerControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrollerControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		491774021F2135480068005D /* StrollerControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrollerControllerUITests.swift; sourceTree = "<group>"; };
+		491774041F2135480068005D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		491773DC1F2135470068005D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491773F01F2135480068005D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491773FB1F2135480068005D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		491773D61F2135470068005D = {
+			isa = PBXGroup;
+			children = (
+				491773E11F2135480068005D /* StrollerController */,
+				491773F61F2135480068005D /* StrollerControllerTests */,
+				491774011F2135480068005D /* StrollerControllerUITests */,
+				491773E01F2135480068005D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		491773E01F2135480068005D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				491773DF1F2135480068005D /* StrollerController.app */,
+				491773F31F2135480068005D /* StrollerControllerTests.xctest */,
+				491773FE1F2135480068005D /* StrollerControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		491773E11F2135480068005D /* StrollerController */ = {
+			isa = PBXGroup;
+			children = (
+				491773E21F2135480068005D /* AppDelegate.swift */,
+				491773E41F2135480068005D /* ViewController.swift */,
+				491773E61F2135480068005D /* Main.storyboard */,
+				491773E91F2135480068005D /* Assets.xcassets */,
+				491773EB1F2135480068005D /* LaunchScreen.storyboard */,
+				491773EE1F2135480068005D /* Info.plist */,
+			);
+			path = StrollerController;
+			sourceTree = "<group>";
+		};
+		491773F61F2135480068005D /* StrollerControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				491773F71F2135480068005D /* StrollerControllerTests.swift */,
+				491773F91F2135480068005D /* Info.plist */,
+			);
+			path = StrollerControllerTests;
+			sourceTree = "<group>";
+		};
+		491774011F2135480068005D /* StrollerControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				491774021F2135480068005D /* StrollerControllerUITests.swift */,
+				491774041F2135480068005D /* Info.plist */,
+			);
+			path = StrollerControllerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		491773DE1F2135470068005D /* StrollerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 491774071F2135480068005D /* Build configuration list for PBXNativeTarget "StrollerController" */;
+			buildPhases = (
+				491773DB1F2135470068005D /* Sources */,
+				491773DC1F2135470068005D /* Frameworks */,
+				491773DD1F2135470068005D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StrollerController;
+			productName = StrollerController;
+			productReference = 491773DF1F2135480068005D /* StrollerController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		491773F21F2135480068005D /* StrollerControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4917740A1F2135480068005D /* Build configuration list for PBXNativeTarget "StrollerControllerTests" */;
+			buildPhases = (
+				491773EF1F2135480068005D /* Sources */,
+				491773F01F2135480068005D /* Frameworks */,
+				491773F11F2135480068005D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				491773F51F2135480068005D /* PBXTargetDependency */,
+			);
+			name = StrollerControllerTests;
+			productName = StrollerControllerTests;
+			productReference = 491773F31F2135480068005D /* StrollerControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		491773FD1F2135480068005D /* StrollerControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4917740D1F2135480068005D /* Build configuration list for PBXNativeTarget "StrollerControllerUITests" */;
+			buildPhases = (
+				491773FA1F2135480068005D /* Sources */,
+				491773FB1F2135480068005D /* Frameworks */,
+				491773FC1F2135480068005D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				491774001F2135480068005D /* PBXTargetDependency */,
+			);
+			name = StrollerControllerUITests;
+			productName = StrollerControllerUITests;
+			productReference = 491773FE1F2135480068005D /* StrollerControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		491773D71F2135470068005D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Andrew Clink";
+				TargetAttributes = {
+					491773DE1F2135470068005D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9N5NU42YFD;
+						ProvisioningStyle = Automatic;
+					};
+					491773F21F2135480068005D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9N5NU42YFD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 491773DE1F2135470068005D;
+					};
+					491773FD1F2135480068005D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9N5NU42YFD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 491773DE1F2135470068005D;
+					};
+				};
+			};
+			buildConfigurationList = 491773DA1F2135470068005D /* Build configuration list for PBXProject "StrollerController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 491773D61F2135470068005D;
+			productRefGroup = 491773E01F2135480068005D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				491773DE1F2135470068005D /* StrollerController */,
+				491773F21F2135480068005D /* StrollerControllerTests */,
+				491773FD1F2135480068005D /* StrollerControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		491773DD1F2135470068005D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491773ED1F2135480068005D /* LaunchScreen.storyboard in Resources */,
+				491773EA1F2135480068005D /* Assets.xcassets in Resources */,
+				491773E81F2135480068005D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491773F11F2135480068005D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491773FC1F2135480068005D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		491773DB1F2135470068005D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491773E51F2135480068005D /* ViewController.swift in Sources */,
+				491773E31F2135480068005D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491773EF1F2135480068005D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491773F81F2135480068005D /* StrollerControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491773FA1F2135480068005D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491774031F2135480068005D /* StrollerControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		491773F51F2135480068005D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 491773DE1F2135470068005D /* StrollerController */;
+			targetProxy = 491773F41F2135480068005D /* PBXContainerItemProxy */;
+		};
+		491774001F2135480068005D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 491773DE1F2135470068005D /* StrollerController */;
+			targetProxy = 491773FF1F2135480068005D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		491773E61F2135480068005D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				491773E71F2135480068005D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		491773EB1F2135480068005D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				491773EC1F2135480068005D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		491774051F2135480068005D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		491774061F2135480068005D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		491774081F2135480068005D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9N5NU42YFD;
+				INFOPLIST_FILE = StrollerController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewclink.StrollerController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		491774091F2135480068005D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9N5NU42YFD;
+				INFOPLIST_FILE = StrollerController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewclink.StrollerController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4917740B1F2135480068005D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9N5NU42YFD;
+				INFOPLIST_FILE = StrollerControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewclink.StrollerControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StrollerController.app/StrollerController";
+			};
+			name = Debug;
+		};
+		4917740C1F2135480068005D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 9N5NU42YFD;
+				INFOPLIST_FILE = StrollerControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewclink.StrollerControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StrollerController.app/StrollerController";
+			};
+			name = Release;
+		};
+		4917740E1F2135480068005D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9N5NU42YFD;
+				INFOPLIST_FILE = StrollerControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewclink.StrollerControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = StrollerController;
+			};
+			name = Debug;
+		};
+		4917740F1F2135480068005D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 9N5NU42YFD;
+				INFOPLIST_FILE = StrollerControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewclink.StrollerControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = StrollerController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		491773DA1F2135470068005D /* Build configuration list for PBXProject "StrollerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491774051F2135480068005D /* Debug */,
+				491774061F2135480068005D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		491774071F2135480068005D /* Build configuration list for PBXNativeTarget "StrollerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491774081F2135480068005D /* Debug */,
+				491774091F2135480068005D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4917740A1F2135480068005D /* Build configuration list for PBXNativeTarget "StrollerControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4917740B1F2135480068005D /* Debug */,
+				4917740C1F2135480068005D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4917740D1F2135480068005D /* Build configuration list for PBXNativeTarget "StrollerControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4917740E1F2135480068005D /* Debug */,
+				4917740F1F2135480068005D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 491773D71F2135470068005D /* Project object */;
+}
