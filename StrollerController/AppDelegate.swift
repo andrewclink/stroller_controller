@@ -10,6 +10,7 @@ import UIKit
 import CoreBluetooth
 
 let stroller_service_uuid = CBUUID(string: "C8216907-B28D-67AB-864F-D6BDD324D4F9")
+let reversed_service_uuid = CBUUID(string: "F9D424D3-BDD6-4F86-AB67-8DB2076921C8")
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, CBCentralManagerDelegate
@@ -35,7 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CBCentralManagerDelegate
         self.window?.makeKeyAndVisible()
         
         
-        btmanager?.scanForPeripherals(withServices: [stroller_service_uuid], options: nil)
         return true
     }
 
@@ -67,6 +67,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CBCentralManagerDelegate
     func centralManagerDidUpdateState(_ central: CBCentralManager)
     {
       print("BT: Central Manager update state \(central.state)")
+        switch (central.state)
+        {
+            case .poweredOn:
+                print("BT: Powered On; scanning.")
+                btmanager?.scanForPeripherals(withServices: [stroller_service_uuid, reversed_service_uuid], options: nil)
+            
+            case .unsupported:
+                print("BT: Unsupported")
+            
+            case .unauthorized:
+                print("BT: Unauthorized")
+            
+            default:
+                print("BT: unhandled central state \(String(describing:central.state))");
+            
+        }
     }
     
 }
