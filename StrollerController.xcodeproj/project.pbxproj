@@ -14,6 +14,10 @@
 		491773ED1F2135480068005D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491773EB1F2135480068005D /* LaunchScreen.storyboard */; };
 		491773F81F2135480068005D /* StrollerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491773F71F2135480068005D /* StrollerControllerTests.swift */; };
 		491774031F2135480068005D /* StrollerControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491774021F2135480068005D /* StrollerControllerUITests.swift */; };
+		491774111F213A9F0068005D /* Pace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491774101F213A9F0068005D /* Pace.swift */; };
+		491774131F213C640068005D /* Stroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491774121F213C640068005D /* Stroller.swift */; };
+		491774151F22640D0068005D /* Pace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491774141F22640D0068005D /* Pace.swift */; };
+		491774181F226A030068005D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491774171F226A030068005D /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		491773FE1F2135480068005D /* StrollerControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StrollerControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		491774021F2135480068005D /* StrollerControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrollerControllerUITests.swift; sourceTree = "<group>"; };
 		491774041F2135480068005D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		491774101F213A9F0068005D /* Pace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pace.swift; sourceTree = "<group>"; };
+		491774121F213C640068005D /* Stroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stroller.swift; sourceTree = "<group>"; };
+		491774141F22640D0068005D /* Pace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pace.swift; sourceTree = "<group>"; };
+		491774171F226A030068005D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491774181F226A030068005D /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,7 @@
 				491773F61F2135480068005D /* StrollerControllerTests */,
 				491774011F2135480068005D /* StrollerControllerUITests */,
 				491773E01F2135480068005D /* Products */,
+				491774161F226A030068005D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +113,8 @@
 				491773E91F2135480068005D /* Assets.xcassets */,
 				491773EB1F2135480068005D /* LaunchScreen.storyboard */,
 				491773EE1F2135480068005D /* Info.plist */,
+				491774101F213A9F0068005D /* Pace.swift */,
+				491774121F213C640068005D /* Stroller.swift */,
 			);
 			path = StrollerController;
 			sourceTree = "<group>";
@@ -112,6 +124,7 @@
 			children = (
 				491773F71F2135480068005D /* StrollerControllerTests.swift */,
 				491773F91F2135480068005D /* Info.plist */,
+				491774141F22640D0068005D /* Pace.swift */,
 			);
 			path = StrollerControllerTests;
 			sourceTree = "<group>";
@@ -123,6 +136,14 @@
 				491774041F2135480068005D /* Info.plist */,
 			);
 			path = StrollerControllerUITests;
+			sourceTree = "<group>";
+		};
+		491774161F226A030068005D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				491774171F226A030068005D /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +285,8 @@
 			files = (
 				491773E51F2135480068005D /* ViewController.swift in Sources */,
 				491773E31F2135480068005D /* AppDelegate.swift in Sources */,
+				491774131F213C640068005D /* Stroller.swift in Sources */,
+				491774111F213A9F0068005D /* Pace.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491774151F22640D0068005D /* Pace.swift in Sources */,
 				491773F81F2135480068005D /* StrollerControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

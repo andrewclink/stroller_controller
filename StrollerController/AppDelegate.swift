@@ -7,15 +7,35 @@
 //
 
 import UIKit
+import CoreBluetooth
+
+let stroller_service_uuid = CBUUID(string: "C8216907-B28D-67AB-864F-D6BDD324D4F9")
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate, CBCentralManagerDelegate
+{
+    var btmanager: CBCentralManager?;
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
+    {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+        
+        let initialViewController:ViewController = storyboard.instantiateViewController(withIdentifier: "speedcontrol") as! ViewController
+
+        
+        btmanager = CBCentralManager(delegate: self, queue: nil)
+        
+        
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
+        
+        
+        btmanager?.scanForPeripherals(withServices: [stroller_service_uuid], options: nil)
         return true
     }
 
@@ -42,5 +62,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    //MARK - Bluetooth
+    
+    func centralManagerDidUpdateState(_ central: CBCentralManager)
+    {
+      print("BT: Central Manager update state \(central.state)")
+    }
+    
 }
 
