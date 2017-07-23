@@ -13,6 +13,12 @@ struct Pace
     var minutes:Int
     var seconds:Int
     
+    var asSeconds:Int {
+        get {
+            return self.minutes * 60 + self.seconds
+        }
+    }
+    
     init(minutes: Int, seconds: Int)
     {
         self.minutes = minutes + (seconds / 60)
@@ -81,6 +87,26 @@ struct Pace
         lhs.seconds = seconds % 60
     }
 
+    
+    static func >(lhs:Pace, rhs:Pace) -> Bool
+    {
+        return (lhs.minutes * 60 + lhs.seconds ) > (rhs.minutes * 60  + rhs.seconds)
+    }
+    static func >(lhs:Pace, rhs:Int) -> Bool
+    {
+        return (lhs.minutes * 60  + lhs.seconds) > rhs
+    }
+
+    static func <(lhs:Pace, rhs:Pace) -> Bool
+    {
+        return (lhs.minutes * 60  + lhs.seconds) < (rhs.minutes * 60  + rhs.seconds)
+    }
+    static func <(lhs:Pace, rhs:Int) -> Bool
+    {
+        return (lhs.minutes * 60  + lhs.seconds) < rhs
+    }
+
+    
 //    static func -(subtrahend:Pace) -> Pace
 //    {
 //        return Pace(minutes: minutes - subtrahend.minutes, seconds: seconds - subtrahend.seconds)

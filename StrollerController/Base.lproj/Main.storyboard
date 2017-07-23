@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,35 +22,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5:00/km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABS-XY-VN4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5:00/km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABS-XY-VN4">
                                 <rect key="frame" x="16" y="28" width="343" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="l2D-CT-ulT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="44"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pff-g2-TUD">
-                                <rect key="frame" x="16" y="166" width="161" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pff-g2-TUD">
+                                <rect key="frame" x="16" y="110" width="161" height="44"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Z5C-Ji-qHk"/>
+                                </constraints>
                                 <state key="normal" title="Slow"/>
                                 <connections>
                                     <action selector="slowDownAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="yZt-Fs-C7J"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkC-xE-Bke">
-                                <rect key="frame" x="198" y="166" width="161" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RkC-xE-Bke">
+                                <rect key="frame" x="198" y="110" width="161" height="44"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="LMd-Pe-1Qo"/>
+                                </constraints>
                                 <state key="normal" title="Fast"/>
                                 <connections>
                                     <action selector="speedUpAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="GYl-ZN-lIu"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="F82-0M-oTN">
+                                <rect key="frame" x="14" y="324" width="347" height="31"/>
+                                <connections>
+                                    <action selector="setSteeringAngleWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="Sb2-l7-chb"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pff-g2-TUD" firstAttribute="top" secondItem="ABS-XY-VN4" secondAttribute="bottom" constant="8" id="54Q-h3-kZs"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="F82-0M-oTN" secondAttribute="leading" id="Ilc-uM-dC9"/>
+                            <constraint firstItem="ABS-XY-VN4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Mib-ei-NUZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RkC-xE-Bke" secondAttribute="trailing" id="SFO-9m-Vcd"/>
+                            <constraint firstItem="F82-0M-oTN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="304" id="dEv-Ui-AJM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ABS-XY-VN4" secondAttribute="trailing" id="dJc-H0-WnQ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ABS-XY-VN4" secondAttribute="leading" id="duv-Jd-1K0"/>
+                            <constraint firstItem="RkC-xE-Bke" firstAttribute="leading" secondItem="Pff-g2-TUD" secondAttribute="trailing" constant="21" id="pVs-Fl-jVN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F82-0M-oTN" secondAttribute="trailing" id="shr-0B-Sqp"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Pff-g2-TUD" secondAttribute="leading" id="uN1-h8-Yp2"/>
+                            <constraint firstItem="RkC-xE-Bke" firstAttribute="centerY" secondItem="Pff-g2-TUD" secondAttribute="centerY" id="xGY-He-Mv9"/>
+                            <constraint firstItem="RkC-xE-Bke" firstAttribute="width" secondItem="Pff-g2-TUD" secondAttribute="width" id="yeK-Lh-6O1"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="angleSlider" destination="F82-0M-oTN" id="GS7-5r-g8v"/>
                         <outlet property="paceField" destination="ABS-XY-VN4" id="BGu-H0-ETf"/>
                     </connections>
                 </viewController>

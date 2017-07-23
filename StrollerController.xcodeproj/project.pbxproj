@@ -18,6 +18,7 @@
 		491774131F213C640068005D /* Stroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491774121F213C640068005D /* Stroller.swift */; };
 		491774151F22640D0068005D /* Pace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491774141F22640D0068005D /* Pace.swift */; };
 		491774181F226A030068005D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 491774171F226A030068005D /* CoreBluetooth.framework */; };
+		491774361F22DA7F0068005D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491774351F22DA7F0068005D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		491774121F213C640068005D /* Stroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stroller.swift; sourceTree = "<group>"; };
 		491774141F22640D0068005D /* Pace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pace.swift; sourceTree = "<group>"; };
 		491774171F226A030068005D /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		491774351F22DA7F0068005D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				491773EE1F2135480068005D /* Info.plist */,
 				491774101F213A9F0068005D /* Pace.swift */,
 				491774121F213C640068005D /* Stroller.swift */,
+				491774351F22DA7F0068005D /* Extensions.swift */,
 			);
 			path = StrollerController;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491774361F22DA7F0068005D /* Extensions.swift in Sources */,
 				491773E51F2135480068005D /* ViewController.swift in Sources */,
 				491773E31F2135480068005D /* AppDelegate.swift in Sources */,
 				491774131F213C640068005D /* Stroller.swift in Sources */,
