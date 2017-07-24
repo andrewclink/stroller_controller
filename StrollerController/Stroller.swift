@@ -254,6 +254,13 @@ class Stroller : NSObject, CBPeripheralDelegate {
         }
     }
     
+    func peripheral(_ peripheral: CBPeripheral, didReadRSSI RSSI: NSNumber, error: Error?)
+    {
+        // TODO: send to device to feed connection watchdog.
+        //
+        print("rssi: \(RSSI)")
+    }
+    
     
     //MARK: API
     

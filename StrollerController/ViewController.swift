@@ -44,29 +44,59 @@ class ViewController: UIViewController, CBCentralManagerDelegate, StrollerDelega
     
     @IBAction func slowDownAction()
     {
-        
-//        if currentPace == 0
-//        {
-//            // We're stopped, start moving at a walking pace
-//            // 5 km/hr = 1hr/5km = 60min/5km = 12min/1km
-//            currentPace = 12
-//        }
-        self.stroller?.decreaseSpeed(by: Pace(minutes:0, seconds:5))
+        if let stroller = self.stroller
+        {
+            switch(stroller.currentPace.asSeconds)
+            {
+                case 7*60...12*60:
+                    // Moving slowly
+                    stroller.decreaseSpeed(by: Pace(minutes:0, seconds:30))
+                
+                case 5*60+45...6*60+59:
+                    // Moving moderately
+                    stroller.decreaseSpeed(by: Pace(minutes:0, seconds:10))
+                
+                default:
+                    // Moving quickly
+                    stroller.decreaseSpeed(by: Pace(minutes:0, seconds:5))
+            }
+        }
     }
     
     @IBAction func speedUpAction()
     {
-        if (self.stroller!.isStopped())
+        if let stroller = self.stroller
         {
-            // We're stopped, start moving at a walking pace
-            // 5 km/hr = 1hr/5km = 60min/5km = 12min/1km
-            self.stroller?.currentPace = Pace(minutes: 12, seconds: 0)
-        }
-        else
-        {
-            self.stroller?.increaseSpeed(by: Pace(minutes:0, seconds:5))
+            switch(stroller.currentPace.asSeconds)
+            {
+                case 0:
+                    // We're stopped, start moving at a walking pace
+                    // 5 km/hr = 1hr/5km = 60min/5km = 12min/1km
+                    stroller.currentPace = Pace(minutes: 12, seconds: 0)
+                
+                case 7*60...12*60:
+                    // Moving slowly
+                    stroller.increaseSpeed(by: Pace(minutes:0, seconds:30))
+
+                case 5*60+45...6*60+59:
+                    // Moving moderately
+                    stroller.increaseSpeed(by: Pace(minutes:0, seconds:10))
+
+                default:
+                    // Moving quickly
+                    stroller.increaseSpeed(by: Pace(minutes:0, seconds:5))
+                
+
+            }
         }
     }
+    
+    @IBAction func stopAction()
+    {
+        print("Stopping immediately");
+        self.stroller?.currentPace = Pace(minutes: 0, seconds: 0)
+    }
+
 
     
     @IBAction func setSteeringAngle(sender:UISlider)
@@ -79,7 +109,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate, StrollerDelega
     internal func stroller(_ s: Stroller, didChangePace pace: Pace)
     {
         DispatchQueue.main.async {
-            self.paceField?.text? = String(format: "%d:%02d", pace.minutes, pace.seconds)
+            self.paceField?.text? = String(format: "%d:%02d/km", pace.minutes, pace.seconds)
         }
     }
     
