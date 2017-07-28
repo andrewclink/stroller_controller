@@ -29,6 +29,8 @@ class ViewController: UIViewController, CBCentralManagerDelegate, StrollerDelega
         super.viewDidLoad()
 
         paceField?.text = "Searching..."
+        angleSlider?.addTarget(self, action: #selector(setSteeringAngleEnded(sender:)), for: .touchUpInside)
+        angleSlider?.addTarget(self, action: #selector(setSteeringAngleEnded(sender:)), for: .touchUpOutside)
         
         startScanning()
     }
@@ -102,6 +104,16 @@ class ViewController: UIViewController, CBCentralManagerDelegate, StrollerDelega
     @IBAction func setSteeringAngle(sender:UISlider)
     {
         self.stroller?.steeringAngle = sender.value
+    }
+    
+    @IBAction func setSteeringAngleEnded(sender:UISlider)
+    {
+        NSLog("steering ended")
+
+        // re-center
+        sender.value = 0;
+        self.stroller?.steeringAngle = sender.value
+
     }
     
     // MARK: - Responding to Events

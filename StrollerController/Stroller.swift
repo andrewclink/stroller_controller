@@ -85,13 +85,13 @@ class Stroller : NSObject, CBPeripheralDelegate {
         {
             // Bound the value
             var x = newAngle
-            if x > 1 { x = 1 }
-            if x < 0 { x = 0 }
+            if x > 0.5  { x = 0.5  }
+            if x < -0.5 { x = -0.5 }
 
             _steeringAngle = x
             
             // Transform into data
-            let uintAngle = Int16(x * Float(Int16.max))
+            let uintAngle = Int16(x * 86.0) // 86  teeth?
             let dataAngle = Data.init(from: uintAngle)
             
             // Send to peri
